@@ -8,12 +8,11 @@ package tdavector;
 
 /**
  *
- * @author Sarahi Rivera 
- *26 de Septiembre de 2022
+ * @author invitado
  */
 public class TDAVector {
 
-private int vector[];
+    private int vector[];
 private byte tamaño, numElem;
 
 /* Constructores
@@ -32,13 +31,16 @@ public TDAVector( byte tamaño){
 vector = new int [tamaño];
 numElem= 0;
 }
-public void agregarElementoFinal(int dato){    
-    vector[0]= dato; numElem ++;
+public void agregarElementoFinal(int dato){  
+    for (int numElem = 0; numElem <tamaño; numElem++) {
+   vector[0]= dato; numElem ++;
     vector[1]= dato; numElem ++;
     vector[2]= dato; numElem ++;
-    vector[3]= dato; numElem ++;
+    vector[3]= dato; numElem ++; 
+    }
+   System.out.println("El numero que accediste esta mal");
+   return ;
+ 
 }
+   
 }
-    
-    
-
