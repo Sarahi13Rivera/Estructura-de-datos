@@ -9,8 +9,12 @@
  * @author invitado
  */
 public class TDAVector {
+
+    /**
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
-        
+        // TODO code application logic here
     }
 private int vector[];
 private byte tamaño, numElem;
@@ -27,18 +31,22 @@ public TDAVector() {
     numElem =0;
 }
 public TDAVector( byte tamaño){
-this.tamaño=tamaño;
+    this.tamaño=tamaño;
 vector = new int [tamaño];
 numElem= 0;
 }
-public void agregarElementoFinal(int dato){  
+public boolean agregarElementoFinal(int dato){  
 if(numElem < tamaño){
    vector[numElem]= dato; 
    numElem++;
-    }
-   
+     return true;
  
+    }
+        return false;
+
 }
-   
 }
+
+    
+    
 
